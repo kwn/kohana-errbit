@@ -1,0 +1,22 @@
+{
+    "name":        "kwn/kohana-errbit",
+    "type":        "kohana-module",
+    "description": "Errbit integration for Kohana 3.3",
+    "keywords":    ["kohana", "errbit", "airbrake"],
+    "authors": [
+        {
+            "name":     "kwn",
+            "role":     "developer"
+        }
+    ],
+    "support": {
+        "issues":   "https://github.com/kwn/kohana-errbit/issues",
+        "source":   "https://github.com/kwn/kohana-errbit"
+    },
+    "require": {
+        "composer/installers": "~1.0",
+        "kohana/core":         ">=3.3",
+        "php":                 ">=5.3.3",
+        "emgiezet/errbit-php": "dev-master"
+    }
+}
