@@ -17,4 +17,5 @@ Errbit::instance()->configure(array(
 if (Kohana::$environment <= Kohana::$config->load('errbit.min_env'))
 {
     Errbit::instance()->start();
+    Kohana::$log->attach(new Log_Errbit());
 }
