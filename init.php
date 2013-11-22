@@ -10,7 +10,7 @@ Errbit::instance()->configure(array(
     'api_key'          => Kohana::$config->load('errbit.api_key'),
     'port'             => Kohana::$config->load('errbit.port'),
     'host'             => Kohana::$config->load('errbit.host'),
-    'secure'           => Kohana::$config->load('errbit.secure'),
+    'secure'           => Kohana::$config->load('errbit.port') == 443,
     'environment_name' => $environment,
 ));
 
