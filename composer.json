@@ -1,12 +1,15 @@
 {
-    "name":        "kwn/kohana-errbit",
-    "type":        "kohana-module",
-    "description": "Errbit integration for Kohana 3.3",
-    "keywords":    ["kohana", "errbit", "airbrake"],
+    "name":              "kwn/kohana-errbit",
+    "minimum-stability": "dev",
+    "type":              "kohana-module",
+    "description":       "Errbit integration for Kohana 3.3",
+    "keywords":          ["kohana", "errbit", "errbit php", "airbrake"],
+    "homepage":          "https://github.com/kwn/kohana-errbit",
+    "license":           "MIT",
     "authors": [
         {
-            "name":     "kwn",
-            "role":     "developer"
+            "name": "kwn",
+            "role": "developer"
         }
     ],
     "support": {
