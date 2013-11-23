@@ -24,7 +24,6 @@ Kohana::modules(array(
     [...]
     'kohana-errbit'  => MODPATH.'kohana-errbit',
 ));
-
 ```
 
 ## Configuration
@@ -38,7 +37,6 @@ return array(
     'port'    => 80,
     'min_env' => Kohana::DEVELOPMENT
 );
-
 ```
 
 Remember to change ```min_env``` to value lower than ```Kohana::DEVELOPMENT``` (ie. ```Kohana::STAGING```), to avoid Errbit requests during development.
