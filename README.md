@@ -57,7 +57,7 @@ Of course you need to configure your Errbit, to handle requests from application
 
 ## Ready!
 
-This module registers log driver that handles errbit notifications on exceptions, and registers error handlers:
+This module registers Kohana Log driver, that handles Errbit notifications on exceptions, and registers error handlers:
 
 ```php
 set_error_handler();
