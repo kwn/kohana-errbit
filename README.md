@@ -29,9 +29,21 @@ Kohana::modules(array(
 
 ## Configuration
 
-Copy ```/modules/kohana-errbit/config/errbit.php``` to ```/application/config``` and fill copied file with your settings. Remember to change ```min_env``` to value lower than ```Kohana::DEVELOPMENT``` (ie. ```Kohana::STAGING```), to avoid Errbit requests during development.
+Copy ```/modules/kohana-errbit/config/errbit.php``` to ```/application/config/``` and fill config file with your settings. 
 
-Remember to set the environment in your vhost:
+```php
+return array(
+    'api_key' => 'PUT YOUR ERRBIT API KEY HERE',
+    'host'    => 'errbit.yourdomain.com',
+    'port'    => 80,
+    'min_env' => Kohana::DEVELOPMENT
+);
+
+```
+
+Remember to change ```min_env``` to value lower than ```Kohana::DEVELOPMENT``` (ie. ```Kohana::STAGING```), to avoid Errbit requests during development.
+
+Remember to set Kohana environment in your vhost:
 ```
 <VirtualHost *:80>
     DocumentRoot /var/www/vhosts/com.application/httpdocs
@@ -39,9 +51,9 @@ Remember to set the environment in your vhost:
     
     SetEnv KOHANA_ENV PRODUCTION
 </VirtualHost>
+```
 
 Of course you need to configure your Errbit, to handle requests from application.
-```
 
 ## Ready!
 
@@ -53,4 +65,4 @@ set_exception_handler();
 register_shutdown_function();
 ```
 
-This module uses emgiezet/errbitPHP vendor. Check <https://github.com/emgiezet/errbitPHP> for more information.
+This module uses ```emgiezet/errbitPHP``` vendor. Check <https://github.com/emgiezet/errbitPHP> for more information.
